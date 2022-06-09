@@ -1,15 +1,79 @@
 <!doctype html>
-<html>
-  <head>
-    <title>My first webpage</title>
-    <style>
-      body {margin: 20%; font-family: sans-serif; font-size: 1.5em;}
-      h1 {letter-spacing: 0.05em;}
-      p {color: grey;}
-    </style>
-  </head>
-  <body>
-    <h1>My first webpage</h1>
-    <p>I'm so smart</p>
-  </body>
+<html lang="it">
+	<head>
+		<title>Esame</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;500;600&display=swap" rel="stylesheet">
+		<!--icone-->
+		<script src="https://kit.fontawesome.com/92d5bf2e45.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	</head>
+	<body>
+		<header>
+			<!--menu di navigazione-->
+			<nav>
+				<ul>
+				  <li id="logomenu"><a id="alogomenu" href="index.html"><img class="logomenu" src="immagini/transparent1.0copia.png" style="width:95px;height:33,25px"></a></li>
+				  <li><a href="#">Home</a></li>		  
+				  <li class="dropdown">
+				    <a href="servizi.html" href="javascript:void(0)" class="dropbtn">Servizi</a>
+				    <div class="dropdown-content">
+				      <a href="#jumpdj">Dj</a>
+				      <a href="#jumpfotografi">Fotografi</a>
+				      <a href="#jumplocali">Locali e privati</a>
+				    </div>
+				  </li>
+				  <li><a href="community.html">Community</a></li>
+				  <i class="fa-regular fa-circle-user social" href="community.html"></i>
+				</ul>
+			</nav>
+			<div id="background">
+				<img id="immtitolo" src="immagini/servizitransp.png">
+			</div>
+		</header>
+
+		<div class="divider"></div>
+		<section>
+		<h1 class="header">Prendi parte alla nostra community e generiamo insieme<br>musica, ricordi e divertimento!</h1>
+		</section>
+		<div class="divider"></div>
+
+		<section class="par-section">
+            <div class="chi">
+                <h2>A CHI CI RIVOLGIAMO</h2>
+                <p>Sei un dj, un fotografo, un locale o semplicemente un privato che vuole organizzare una festa? Sei nel posto giusto!<br>Siamo una community che si impegna a mettere in contatto queste personalità sparse per tutta Italia, aiutandole a trovare ispirazione, a organizzare party mozzafiato e a migliorarne le prestazioni!<br>Desideri saperne di più? Visita la nostra pagina dei <a href="servizi.html">servizi</a> e sarai accontentato.</p>
+            </div>
+            <img src="immagini/imm3.png" class="immpar">
+		</section>
+
+		<section class="par-section">
+            <div class="chi">
+                <h2>COME FUNZIONA</h2>
+                <p>Ti basterà registrarti alla community per accedere ai servizi a te dedicati. Potrai mettere a disposizione le tue competenze:<br>
+				-	completando un calendario con le date in cui potrai offrire il tuo operato<br>
+				-	caricando le immagini o i formati audio della tua attività<br>
+				-	condividendo il tuo profilo social/contatto privato<br>
+				Potrai anche richiedere e dare consigli nella box dedicata alle recensioni che troverai nel profilo di ciascun utente, così come potrai contattarli direttamente qualora tu voglia creare collaborazioni.<br>Cosa stai aspettando, <a href="community.html">registrati!</a></p>
+            </div>
+            <img src="immagini/imm2.jpg" class="immpar">
+		</section>
+
+       	<div class="divider" id="more"></div>
+		<div class="social-container">
+		  <h4>Contattaci</h4>
+		  <div class="social-icons">
+		    <li><a href="#"><i class="fa-brands fa-instagram social"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-facebook-f social"></i></a></li>
+			<li><a href="#"><i class="fa-solid fa-at social"></i></a></li>
+		  </div>
+		</div>
+		<div class="divider" id="less"></div>
+
+		<footer>&copy Sito realizzato da Nicole Sironi<br><a href="documentazione.html">Documentazione</a><br> &copy Fotografie di <a href="https://instagram.com/davidetaglini?igshid=YmMyMTA2M2Y=">Davide Taglini</a></footer>
+	</body>
 </html>
