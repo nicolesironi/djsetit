@@ -1,0 +1,554 @@
+/*istruzioni W3school per menu dropdown e fixed*/
+/*AGGIUSTA MISURE NAV BAR*/
+body {
+  background-color: black;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Prompt', sans-serif !important;
+}
+nav{
+  position: fixed;
+  z-index: +1;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  text-shadow: 5px 5px 7px green;
+  font-weight: 200 !important;
+  font-size: 1.5em;
+  letter-spacing: 2px;  
+  text-transform: uppercase;
+}
+li{
+  display: inline-block;
+}
+#logomenu {
+  padding: 10px 40em 0px 15px !important;
+}
+#alogomenu {
+  padding: 0px 0px 0px 0px !important;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0 16px 4px 16px;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+  color: purple;
+  transition-duration: 0.4s;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  text-transform: lowercase;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  color: white;
+  opacity: 0.5;
+  transition-duration: 0.4s;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fa-circle-user {
+  color: white;
+}
+#immtitolo {
+  width: 35%;
+  display: block;
+  padding: 100px 0 40px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#background {
+  background-image: linear-gradient(black, #024873, black);
+}
+.divider {
+  width: 80%;
+  height: 2px;
+  margin-inline: auto;
+  background-color: #024873;
+  border-radius: 1rem;
+  margin-top: 3em;
+}
+/*introduzione*/
+.header {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5em !important;
+  letter-spacing: 2px;
+  margin: 2em 0 0 0;
+  text-align: center;
+  color: #f35626;
+  opacity:0.7;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/*paragrafi*/
+.par-section {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 1.15rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4em;
+  background-image: linear-gradient(to right, #024873, black, #601A35, black, #024873, black);
+}
+.immpar {
+  width: 35%;
+  margin: auto 0;
+  margin-right: 3em;
+  padding: 1em 0 1em 0;
+  display: block;
+}
+.par-section h2, h3 {
+  margin: 40px 30px 20px 30px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.75rem !important;
+}
+.chi {
+  text-align: center;
+  padding: 0 2em 0 2em;
+}
+.chi a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+ }
+.chi a:hover {
+  color: grey;
+}
+@media (max-width: 900px) {
+  .par-section {
+    flex-direction: column-reverse;
+    width: 90% !important;
+    margin: 1.5em auto;
+  }
+  .info {
+    width: 100%;
+  }
+  .par-section img {
+    width: 100%;
+  }
+  .par-section h2, h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+.par-section img {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+.par-dj {
+  margin-top: 1em;
+}
+.par-section h1, h2 {
+  padding-top: 0;
+}
+}
+.jump{
+  padding-top: 1em;
+}
+/*contattaci*/
+.social-container{
+  text-align: center;
+  margin: 0;
+  margin-top: 2.8em;
+}
+h4 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.75rem !important;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5em;
+  padding-bottom: 10px;
+}
+.social{
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.4s;
+}
+.social:hover{
+  color: #601A35;
+  cursor: pointer;
+}
+#less{
+  margin-top: 2.5em !important;
+}
+#more {
+  margin-top: 4em !important;
+}
+/*footer*/
+footer, footer a{
+  color: white;
+  text-align: center;
+  margin: 2em 0 2em 0;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+footer a{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+/*slider*/
+.w3-content, .w3-display-container{
+  margin: 0 auto;
+  width: 373.612px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.w3-text-white, .w3-hover-text-white:hover {
+  cursor: pointer;
+}
+.w3-left, .w3-hover-text-khaki {
+  color: black !important;
+  margin-bottom: 0px !important;
+}
+.w3-content img {
+  height: 249.075px !important;
+  width: 373.612px !important;
+}
+.w3-button {
+  padding: 8px 3px !important;
+}
+/*paragrafi servizi*/
+.pardj {
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 1.15rem;
+  text-align: center;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  background-image: linear-gradient(to right, black, #601A35, black, #001542, black);
+}
+#menotop {
+  margin-top: 1em !important;
+}
+.meno {
+  margin-bottom: 1em !important;
+  margin-top: 15em !important;
+}
+@media (max-width: 600px) {
+  .meno {
+    margin-top: 50em !important;
+  }
+}
+#esaudio {
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1em 2em;
+  background-color: white;
+  border: solid grey;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  #esaudio {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+}
+#djaudio {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  gap: 3%;
+  width: 80%;
+}
+@media (max-width: 600px) {
+  #djaudio {
+    flex-direction: column-reverse;
+    margin-top: 0 !important;
+  }
+}
+audio {
+  margin-top: 3em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+#corsivo{
+  font-style: italic;
+}
+
+#jumplocali {
+  margin-top:1em;
+}
+.imgcalendario {
+  height: 249.075px;
+  width: 373.612px;
+  display:block;
+  margin:0px auto;
+  text-align:center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/*galleria immagini*/
+#gallery {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  #gallery {
+  margin: 0 auto;
+  width: 84%;
+  height: auto;
+}
+}
+.container {
+  position: relative;
+  display: inline-block;
+  width: 284.9375px;
+  margin-left: 15px;
+  margin-top: 16px;
+  float: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(203,203,203, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media (max-width: 480px) {
+.immagine{
+    width: 98%;
+}
+}
+@media (max-width: 720px) and (min-width: 480px){
+.immagine{
+    width: 47%;
+}
+}
+@media (max-width: 1020px) and (min-width: 720px){
+.immagine{
+    width: 30%;
+}
+}
+/*commenti*/
+input[type=text] {
+  width: 98%;
+  padding: 12px 20px;
+  margin:0px auto;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+#write {
+  width: 98%;
+  margin: 0 auto;
+  margin-left: 0.7em;
+}
+@media (max-width: 600px) {
+  #write {
+    margin: 0 auto;
+    margin-left: 4px;
+  }
+  iframe {
+    width: 90%;
+  }
+}
+/*localizzazione*/
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+label {
+  color: white;
+  display: block;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  font-weight: 200;
+}
+.sfondo {
+  background-color: yellow;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 1px;
+  padding-bottom: 2em;
+  width: 80%;
+  background-color: #024873;
+}
+.mySlides {display:none;}
+
+#logincentr {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3.75rem;
+}
+#accreg {
+  width: 80%;
+  background-image: linear-gradient(to right, #024873, black, #601A35, black, #024873, black);
+}
+#jumpacc, #jumpreg {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+/*form*/
+input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 1em 3em 0 3em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+input[type=submit] {
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 2em 3em 2em 3em;
+  border: solid #ccc;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: black;
+  transition-duration: 0.5 ease-in;
+}
+input[type=submit]:hover {
+  background-color: #024873;
+  border: solid #ccc;
+}
+#form, #forma {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3em;
+  background-image: linear-gradient(to right, #024873, black, #601A35, black, #024873, black);
+}
+#prof {
+  width: 90%;
+  padding: 14px 20px;
+  margin-top: 1em;
+  margin-left: 2.8em;
+}
+.registr {
+  padding: 10px 0px 8px 45px;
+  font-weight: 400;
+}
+/*documentazione*/
+#albero {
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 5px;
+}
+@media (max-width: 600px) {
+  #albero {
+    width: 92%;
+  }
+}
+.tit {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+}
+.did{
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+#margintop {
+  margin-top: 0px !important;
+}
+.wireframe {
+  width: 30%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+#list {
+  display: inline !important;
+  list-style-type: circle !important;
+}
