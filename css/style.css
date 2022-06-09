@@ -275,7 +275,7 @@ footer a{
   margin-bottom: 1em !important;
   margin-top: 15em !important;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px, 400px) {
   .meno {
     margin-top: 50em !important;
   }
@@ -337,7 +337,7 @@ audio {
   width: 90%;
   height: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px, 400px) {
   #gallery {
   margin: 0 auto;
   width: 84%;
