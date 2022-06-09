@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<title>Esame</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--w3.css-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;500;600&display=swap" rel="stylesheet">
+		<!--icone-->
+		<script src="https://kit.fontawesome.com/92d5bf2e45.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+				  <li id="logomenu"><a id="alogomenu" href="index.html"><img class="logomenu" src="immagini/transparent1.0copia.png" style="width:95px;height:33,25px"></a></li>
+				  <li><a href="index.html">Home</a></li>		  
+				  <li class="dropdown">
+				    <a href="servizi.html" href="javascript:void(0)" class="dropbtn">Servizi</a>
+				    <div class="dropdown-content">
+				      <a href="servizi.html">Dj</a>
+				      <a href="servizi.html">Fotografi</a>
+				      <a href="servizi.html">Locali e privati</a>
+				    </div>
+				  </li>
+				  <li><a href="#">Community</a></li>
+				  <i class="fa-regular fa-circle-user social" href="community.html"></i>
+				</ul>
+			</nav>
+			<div id="background">
+				<img id="immtitolo" src="immagini/communitytransp.png">
+			</div>		
+		</header>
+		<i class="fa-regular fa-circle-user" id="logincentr"></i>
+		<div class="pardj" id="accreg">
+			<a href="#jumpacc"><b>Accedi</a></b> al tuo account oppure <b><a href="#jumpreg">registrati</a></b> per poter usufruire di tutti i servizi.
+		</div>
+
+		<section id="jumpacc">
+		<div class="divider"></div>
+				<section>
+					<h1 class="header">ACCEDI</h1>
+				</section>
+			<div class="divider"></div>				
+		<div id="forma">
+		  <form action="/action_page.php">
+			<label class="registr" for="nick">Nickname</label>
+			<input type="text" id="nick" name="nick" placeholder="Es. supermario.01">
+			<label class="registr" for="pwrd">Conferma la password</label>
+			<input type="text" id="pwrd" name="pwrd" placeholder="...">
+		    <input type="submit" value="Accedi">	    
+		  </form>
+		</div>
+		</section>
+
+		<section id="jumpreg">
+		<div class="divider"></div>
+			<section>
+				<h2 class="header">REGISTRATI</h2>
+			</section>
+		<div class="divider"></div>
+		<div id="form">		
+		  <form action="/action_page.php">
+		    <label class="registr" for="name">Nome e Cognome</label>
+		    <input type="text" id="name" name="name" placeholder="Es. Mario Rossi">
+
+		    <label class="registr" for="nickname">Nickname</label>
+		    <input type="text" id="nickname" name="nickname" placeholder="Es. supermario.01">
+
+		    <label class="registr" for="prof">Professione</label>
+		    <select id="prof" name="prof">
+		      <option value="djprof">Dj</option>
+		      <option value="fotprof">Fotografo</option>
+		      <option value="localiprof">Locale o privato</option>
+		    </select>
+
+		    <label class="registr" for="citta">Città</label>
+		    <input type="text" id="citta" name="citta" placeholder="Es. Reggio Emilia">
+
+			<label class="registr" for="decr">Descrizione</label>
+			<input type="text" id="descr" name="descr" placeholder="Es. Sono un dj reggiano autodidatta di 21 anni. Ho studiato musica presso...">
+
+			<label class="registr" for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Es. supermario01@supermusic.it">
+
+			<label class="registr" for="pw">Password</label>
+			<input type="text" id="pw" name="pw" placeholder="Deve contenere almeno: 8 caratteri, una lettera maiuscola ed una minuscola, un numero, un carattere speciale">
+
+			<label class="registr" for="pwconf">Conferma la password</label>
+			<input type="text" id="pwconf" name="pwconf" placeholder="Deve essere uguale a quella precedentemente inserita">
+
+		    <input type="submit" value="Registrati">	    
+		  </form>
+		</div>
+		</section>
+
+		<div class="divider"></div>
+		<footer>&copy Sito realizzato da Nicole Sironi<br><a href="documentazione.html">Documentazione</a><br> &copy Fotografie di <a href="https://instagram.com/davidetaglini?igshid=YmMyMTA2M2Y=">Davide Taglini</a></footer>
+	</body>

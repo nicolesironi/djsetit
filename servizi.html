@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<title>Esame</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;500;600&display=swap" rel="stylesheet">
+		<!--icone-->
+		<script src="https://kit.fontawesome.com/92d5bf2e45.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+	</head>
+	<body>
+		<header>
+			<!--menu di navigazione-->
+			<nav>
+				<ul>
+				  <li id="logomenu"><a id="alogomenu" href="index.html"><img class="logomenu" src="immagini/transparent1.0copia.png" style="width:95px;height:33,25px"></a></li>
+				  <li><a href="index.html">Home</a></li>		  
+				  <li class="dropdown">
+				    <a href="#" href="javascript:void(0)" class="dropbtn">Servizi</a>
+				    <div class="dropdown-content">
+				      <a href="#jumpdj">Dj</a>
+				      <a href="#jumpfotografi">Fotografi</a>
+				      <a href="#jumplocali">Locali e privati</a>
+				    </div>
+				  </li>
+				  <li><a href="community.html">Community</a></li>
+				  <i class="fa-regular fa-circle-user social"></i>
+				</ul>
+			</nav>
+			<div id="background">
+				<img id="immtitolo" src="immagini/servizitransp.png">
+			</div>
+		</header>
+
+		<section class="jump" id="jumpdj">
+			<div class="divider"></div>
+				<section>
+					<h1 class="header">DJ</h1>
+				</section>
+			<div class="divider"></div>
+			<div class="sfondo">
+	          <div class="pardj">
+	          	Una volta eseguito il log in, compila il <b>calendario</b> selezionando le date in cui potrai offrire il tuo servizio. Sarà visibile nel tuo profilo in modo che gli interessati potranno immediatamente contattarti!
+	          </div>
+	        <!--slider-->
+	    	<div class="w3-content w3-display-container">
+			  <img class="mySlides" src="immagini/giugnonew.png" style="width:100%">
+			  <img class="mySlides" src="immagini/luglionew.png" style="width:100%">
+			  <img class="mySlides" src="immagini/agostonew.png" style="width:100%">
+			
+			  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+
+			<div class="pardj">
+				In seguito troverai una sezione dedicata alla <b>musica</b>. Qui potrai caricare le tue tracce audio e i tuoi remix; inoltre, avrai la possibilità di rispondere agli utenti più curiosi che ti potranno chiedere di creare per loro mash-up personalizzate!
+			</div>
+			<div id="djaudio">
+				<div id="esaudio">
+					<p><span class="material-symbols-outlined">account_circle</span> supermario01</p>	
+					<p id="corsivo">"Ehi! Potresti remixarmi la canzone "I'm an Albatroz di AronChupa? Sei miticoo"</p>
+				</div>
+				<audio controls autoplay muted>
+				  <source src="audio.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="pardj meno" id="menotop">
+				Avrai anche uno spazio predisposto alla scrittura di <b>post, citazioni, news</b>...a tutto quello che vorrai condividere con il resto della community.
+			</div>
+			<form>
+			  <label for="write">Scrivi qualcosa</label>
+			  <input id="write" type="text" id="write" name="write" placeholder="Es. Tra 3 giorni uscirà la mia nuova hit #staytuned">
+			</form>
+		</div>
+	    </section>
+
+		<section class="jump" id="jumpfotografi">
+			<div class="divider"></div>
+				<section>
+					<h2 class="header">FOTOGRAFI</h2>
+				</section>
+			<div class="divider"></div>
+			<div class="sfondo">
+	          <div class="pardj">
+	          	Una volta eseguito il log in, compila il <b>calendario</b> selezionando le date in cui potrai offrire il tuo servizio. Sarà visibile nel tuo profilo in modo che gli interessati potranno immediatamente contattarti!
+	          </div>
+			<img class="imgcalendario" src="immagini/luglionew.png">
+
+			<div class="pardj">
+				In seguito troverai una sezione dedicata alle <b>fotografie</b>. Qui potrai caricare le tue foto e i tuoi video, suddivisi in gallerie e cartelle a tuo piacimento!
+			</div>
+			<!--galleria immagini-->
+			<div id="gallery">
+				<div class="container">
+				  <img src="immagini/imm5.jpg" alt="Compleanno" class="image">
+				  <div class="overlay">
+				    <div class="text">Compleanno</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/imm6.jpg" alt="Party" class="image">
+				  <div class="overlay">
+				    <div class="text">Party</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/imm7.jpg" alt="Diciottesimo" class="image">
+				  <div class="overlay">
+				    <div class="text">Diciottesimo</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/imm8.png" alt="Andrea Damante" class="image">
+				  <div class="overlay">
+				    <div class="text">Andrea Damante</div>
+				  </div>
+				</div>
+			</div>
+			<!--commenti-->
+			<div class="pardj meno">
+				Avrai anche uno spazio dedicato alla scrittura di <b>post, citazioni, news</b>...a tutto quello che vorrai condividere con il resto della community.
+			</div>
+			<form>
+			  <label for="write">Scrivi qualcosa</label>
+			  <input id="write" type="text" id="write" name="write" placeholder="Es. Tra 3 giorni pubblicherò le foto della serata Milleeunanotte #staytuned">
+			</form>
+			</div>
+	    </section>
+
+
+		<section class="jump" id="jumplocali">
+			<div class="divider"></div>
+				<section>
+					<h3 class="header">LOCALI E PRIVATI</h3>
+				</section>
+			<div class="divider"></div>
+			<div class="sfondo">
+ 			<div class="pardj">
+	          	Una volta eseguito il log in, compila il <b>calendario</b> selezionando le date in cui il tuo locale potrà ospitare eventi; oppure le date in cui cerchi dj o fotografi per le tue feste private. Sarà visibile nel tuo profilo in modo che gli interessati potranno immediatamente contattarti!
+	        </div>
+			<img class="imgcalendario" src="immagini/giugnonew.png" alt="party">
+
+			<div class="pardj">
+	          	In seguito troverai una sezione dedicata alla <b>promozione del tuo locale</b>. Qui potrai inserire tutte le informazioni che vorresti gli altri utenti conoscessero (ad esempio la tua posizione, una serie di immagini, titoli ricevuti, ecc.)
+	         </div>
+	         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.0698136152814!2d10.628423815378778!3d44.697773579099355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801c5baea74259%3A0x213582db92510c32!2sPiazza%20Camillo%20Prampolini%2C%2042121%20Reggio%20Emilia%20RE!5e0!3m2!1sit!2sit!4v1654337817280!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	         <div id="gallery">
+				<div class="container">
+				  <img src="immagini/loc4.jpg" alt="Locale" class="image">
+				  <div class="overlay">
+				    <div class="text">18/02/2020</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/loc1.jpg" alt="Locale" class="image">
+				  <div class="overlay">
+				    <div class="text">22/04/2021</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/loc2.png" alt="Locale" class="image">
+				  <div class="overlay">
+				    <div class="text">24/05/2022</div>
+				  </div>
+				</div>
+
+				<div class="container">
+				  <img src="immagini/loc3.jpg" alt="Locale" class="image">
+				  <div class="overlay">
+				    <div class="text">31/05/2022</div>
+				  </div>
+				</div>
+			</div>
+
+	         <div class="pardj meno">
+				Avrai anche uno spazio dedicato alla scrittura di <b>post, citazioni, news</b>...a tutto quello che vorrai condividere con il resto della community.
+			</div>
+			<form>
+			  <label for="write">Scrivi qualcosa</label>
+			  <input id="write" type="text" id="write" name="write" placeholder="Es. Per il mese di luglio accorrete in numerosi, drink gratuiti ai primi 10 che si presenteranno all'ingresso!">
+			</form>
+		</div>
+		</section>
+
+		<div class="divider"></div>
+		<footer>&copy Sito realizzato da Nicole Sironi<br><a href="documentazione.html">Documentazione</a><br> &copy Fotografie di <a href="https://instagram.com/davidetaglini?igshid=YmMyMTA2M2Y=">Davide Taglini</a></footer>
+	</body>
+</html>
