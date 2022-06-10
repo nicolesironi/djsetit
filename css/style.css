@@ -273,9 +273,9 @@ footer a{
 }
 .meno {
   margin-bottom: 1em !important;
-  margin-top: 15em !important;
+  /*margin-top: 15em !important;*/
 }
-@media (max-width: 600px) and (max-width: 320px) {
+@media (max-width: 600px){
   .meno {
     margin-top: 50em !important;
   }
@@ -333,24 +333,31 @@ audio {
 }
 /*galleria immagini*/
 #gallery {
+  position: center;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
-@media (max-width: 600px) and (max-width: 320px) {
+@media (max-width: 600px){
   #gallery {
   margin: 0 auto;
-  width: 84%;
+  width: 80%;
   height: auto;
 }
+}
+@media (max-width: 414px) {
+  #gallery {
+    width: 80%;
+  }
 }
 .container {
   position: relative;
   display: inline-block;
-  width: 284.9375px;
+  /*width: 284.9375px;*/
+  width: 280.9375px;
   margin-left: 15px;
   margin-top: 16px;
-  float: left;
+  /*float: left;*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
 .image {
@@ -398,6 +405,9 @@ audio {
     width: 30%;
 }
 }
+@media (max-width: 414px) {
+
+}
 /*commenti*/
 input[type=text] {
   width: 98%;
@@ -443,7 +453,6 @@ label {
   font-weight: 200;
 }
 .sfondo {
-  background-color: yellow;
   margin: 0 auto;
   margin-top: 2em;
   margin-bottom: 2em;
