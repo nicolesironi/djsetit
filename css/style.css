@@ -351,11 +351,9 @@ audio {
 .container {
   position: relative;
   display: inline-block;
-  /*width: 284.9375px;*/
   width: 280.9375px;
   margin-left: 15px;
   margin-top: 16px;
-  /*float: left;*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
 .image {
@@ -519,6 +517,9 @@ input[type=submit]:hover {
   font-weight: 400;
 }
 /*documentazione*/
+.subtitle {
+  text-transform: none;
+}
 #albero {
   width: 50%;
   display: block;
@@ -535,7 +536,7 @@ input[type=submit]:hover {
 .tit {
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
 }
@@ -558,4 +559,22 @@ input[type=submit]:hover {
 #list {
   display: inline !important;
   list-style-type: circle !important;
+}
+#promozione img {
+  display: inline-block;
+  width: 30%;
+}
+#promozione {
+  margin-left: 4em;
+  width: 100%;
+  height: auto;
+}
+#analytics img {
+  display: inline-block;
+  width: 36%;
+  margin-right: 5px;
+}
+#analytics {
+  margin-left: 18em;
+  margin-top: 1em;
 }
